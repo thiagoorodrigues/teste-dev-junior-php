@@ -1,4 +1,4 @@
-# Teste desenvolvedor JR.
+# Teste desenvolvedor JR. PHP
 
 Relembrando os bons tempos da nossa infância vamos desenvolver o famoso jogo de cartas super trunfo.
 
