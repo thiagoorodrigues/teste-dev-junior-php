@@ -1,0 +1,101 @@
+html {
+  font-family: Arial;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none
+}
+.menu  {
+  overflow: hidden;
+  background-color: gold;
+}
+.menu a:hover {
+  background-color: greenyellow;
+  color: red;
+}
+.products {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.item {
+  background-color: gold;
+  padding: 20px;
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  border-radius: 4px;
+  place-items: start;
+  gap: 10px;
+}
+
+.item .header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.item .header-item .title {
+  text-decoration: underline;
+  background: yellowgreen;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid black 1px;
+}
+
+.box-image {
+  max-width: 200px;
+  max-height: 150px;
+}
+.content-body {
+  display: flex;
+  padding-top: 10px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.linha-carta {
+  border-bottom: 1px dotted black;
+  margin: 5px;
+  padding-bottom: 4px;
+
+}
+
+.box-linha {
+  padding: 6px;
+  background-color: rgb(236, 184, 87);
+  border-radius: 4px;
+}
+
+.content-footer {
+  display: grid;
+  align-content: end;
+  place-content: space-between;
+  padding: 10px;
+}
+.foto {
+  display: inline-block;
+  max-width: 30%;
+  border-radius: 4px;
+}
+.description {
+  display: grid;
+  padding-left: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+#comprar {
+  display: inline-block;
+  background-color: gold;
+  color: black;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}

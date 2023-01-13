@@ -20,11 +20,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Produtos</title>
+    <title>Cartas</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/atividadeEcomerce/css/global.css">
-    <link rel="stylesheet" href="/atividadeEcomerce/paginas/produtos/ecommerce.css">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cartas.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -40,13 +40,16 @@
         foreach($resultado as $key =>$value){
       ?>
         <div class="item">
-          <div class="header-item">
-            <img src= "<?=$value["foto"]?>" style= width:200px></img>
+          <div>
+            <img class="box-image" src= "<?=$value["foto"]?>" style= width:200px></img>
           </div>
-            <div class=""><?=$value["nome"]?></div>
-            <div class=""><?=$value["partidas-disputadas"]?></div>
-            <div class=""> <?=$value["gols-marcados"]?></div>
-            <div class=""> <?=$value["ano-de-nascimento"]?></div>
+            <div class="box-linha">
+              <div class="linha-carta">Nome: <?=$value["nome"]?></div>
+              <div class="linha-carta">Partidas disputadas: <?=$value["partidas-disputadas"]?></div>
+              <div class="linha-carta">Vitórias: <?=$value["vitorias"]?></div>
+              <div class="linha-carta">Gols Marcados:  <?=$value["gols-marcados"]?></div>
+              <div class="linha-carta">Ano de Nascimento: <?=$value["ano-de-nascimento"]?></div>
+            </div>
           </div>
             
         </div>
