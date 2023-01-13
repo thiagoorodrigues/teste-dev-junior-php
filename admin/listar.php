@@ -5,7 +5,7 @@
 
   if(isset($_GET["excluir"])) {
     //Monto o delete SQL
-    $sql = "delete from produtos where id = " . $_GET["excluir"] ;
+    $sql = "delete from cartas where id = " . $_GET["excluir"] ;
     //Executo o comando SQL
     $resultado = mysqli_query($conexao, $sql);
 
