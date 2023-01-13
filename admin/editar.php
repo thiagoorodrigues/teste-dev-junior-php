@@ -4,7 +4,6 @@
   $mensagem = "";
   $linha = array();
   
-
     //quando clica em salvar
     if(isset($_POST["nome"]) && isset($_POST["id"])) {
 
@@ -40,35 +39,33 @@
     <meta charset=UTF-8>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
     <title>Conf</title>
   </head>
+
   <body>
   <?php include ("../components/admin/nav.php");?>
 
-    <h1>Editar Produto</h1>
+    <h1>Editar Carta Super Trunfo</h1>
 
     <?php if($mensagem != "") {?>
     <h3><?=$mensagem?></h3>
     <?php } ?>
+    <div class="table">
 
-
-    <form action="editar.php" method="post">
-      <input type="hidden" name="id" value="<?=$linha["id"]?>">
-      FOTO:<input type="text" name="foto" value="<?=$linha["foto"]?>"> </br>
-      NOME:<input type="text" name="nome" value="<?=$linha["nome"]?>"> </br>
-      
-      partidas: <input type="number" name="partidas-disputadas" value="<?=$linha["partidas-disputadas"]?>"/> </br>
-
-      vitorias: <input type="number" name="vitorias" value="<?=$linha["vitorias"]?>"/> </br>
-
-      Gols Marcados: <input type="number" name="gols-marcados" value="<?=$linha["gols-marcados"]?>"/> </br>
-
-      Ano de Nascimento: <input type="number" name="ano-de-nascimento" value="<?=$linha["'ano-de-nascimento'"]?>"/> </br>
-      <input type="submit" value="salvar" />
-    </form>
-
-
-  
+      <form action="editar.php" method="post">
+        <input type="hidden" name="id" value="<?=$linha["id"]?>">
+        FOTO:<input class="form" type="text" name="foto" value="<?=$linha["foto"]?>"> </br>
+        NOME:<input class="form" type="text" name="nome" value="<?=$linha["nome"]?>"> </br>
+        partidas: <input class="form" type="number" name="partidas-disputadas" value="<?=$linha["partidas-disputadas"]?>"/> </br>
+        vitorias: <input class="form" type="number" name="vitorias" value="<?=$linha["vitorias"]?>"/> </br>
+        Gols Marcados: <input class="form" type="number" name="gols-marcados" value="<?=$linha["gols-marcados"]?>"/> </br>
+        Ano de Nascimento: <input class="form" type="number" name="ano-de-nascimento" value="<?=$linha["'ano-de-nascimento'"]?>"/> </br>
+        <div class="button">
+          <input type="submit" value="salvar" />
+        </div>
+      </form>
+    </div>
 
   </body>
 </html>

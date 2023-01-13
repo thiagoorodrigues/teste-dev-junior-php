@@ -22,34 +22,37 @@
     <meta charset=UTF-8>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
     <title>Cadastro</title>
   </head>
   <body>
   <?php include ("../components/admin/nav.php");?>
 
-    <h1>Cadastrar Carta</h1>
+    <h1>Cadastrar Carta Super Trunfo</h1>
 
     <?php if($mensagem != "") {?>
     <h3><?=$mensagem?></h3>
     <?php } ?>
+    <div class="table">
 
+      <form action="cadastro.php" method="post">
 
-    <form action="cadastro.php" method="post">
-      foto: <input type="text" name="foto"/> </br>
+        Foto: <input class="form" type="text" name="foto" placeholder="insira a URL da imagem!"/> </br>
 
-      Nome: <input type="text" name="nome"/> </br>
+        Nome: <input class="form" type="text" name="nome"/> </br>
 
-      partidas: <input type="number" name="partidas-disputadas"/> </br>
+        Partidas: <input class="form" type="number" name="partidas-disputadas"/> </br>
 
-      vitorias: <input type="number" name="vitorias"/> </br>
+        Vitorias: <input class="form" type="number" name="vitorias"/> </br>
 
-      Gols Marcados: <input type="number" name="gols-marcados"/> </br>
+        Gols Marcados: <input class="form" type="number" name="gols-marcados"/> </br>
 
-      Ano de Nascimento: <input type="number" name="ano-de-nascimento"/> </br>
-
-      <input type="submit" value="salvar" />
-    </form>
-
+        Ano de Nascimento: <input class="form" type="number" name="ano-de-nascimento"/> </br>
+        <div class="button">
+        <input type="submit" value="salvar" />
+        </div>
+      </form>
+      </div>
 
     
 
