@@ -37,10 +37,8 @@
         foreach($resultado as $key =>$value){
       ?>
         <div class="item">
-          <div class="img">
-            <img id="box-image" src= "<?=$value["foto"]?>" style= width:200px></img>
-          </div>
-            <div class="box-linha">
+        <div class="box-linha">
+              <img id="box-image" src= "<?=$value["foto"]?>" style= width:200px></img>
               <div class="linha-carta">Nome: <?=$value["nome"]?> </div>
               <div class="linha-carta">Partidas Disputadas: <?=$value["partidas-disputadas"]?></div>
               <div class="linha-carta">Vitórias: <?=$value["vitorias"]?></div>
