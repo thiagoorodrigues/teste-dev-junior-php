@@ -22,7 +22,9 @@ html {
   flex-direction: row;
 }
 
-
+.container {
+  display: flex;
+}
 .item {
   background-color: gold;
   padding: 20px;
@@ -34,13 +36,12 @@ html {
   gap: 10px;
 }
 
-.item .header-item {
-  display: flex;
+.header-item {
   justify-content: space-between;
   align-items: center;
 
 }
-.item .header-item .title {
+.header-item .title {
   text-decoration: underline;
   background: yellowgreen;
   padding: 5px;
@@ -70,32 +71,4 @@ html {
   padding: 6px;
   background-color: rgb(236, 184, 87);
   border-radius: 4px;
-}
-
-.content-footer {
-  display: grid;
-  align-content: end;
-  place-content: space-between;
-  padding: 10px;
-}
-.foto {
-  display: inline-block;
-  max-width: 30%;
-  border-radius: 4px;
-}
-.description {
-  display: grid;
-  padding-left: 5vh;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-}
-#comprar {
-  display: inline-block;
-  background-color: gold;
-  color: black;
-  border-radius: 4px;
-  padding: 10px;
-  font-size: 1rem;
-  text-decoration: none;
-  cursor: pointer;
 }

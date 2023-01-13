@@ -33,7 +33,7 @@
     </div>
     
 
-    
+    <div class="container">
       <div class="products">
 
       <?php
@@ -54,26 +54,9 @@
             
         </div>
           <?php
-          
         }
         ?>
-
-        
-
-
       </div>
-
-
-      <script>
-        function alerta(){
-          var msg = document.getElementById('comprar');
-          if(msg.value == ''){
-            alert('Item adicionado no seu carrinho');
-            return false;
-          }
-        }
-      </script>
-
+    </div>
   </body>
-
 </html>
