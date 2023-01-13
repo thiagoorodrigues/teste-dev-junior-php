@@ -24,7 +24,7 @@
     $id = isset($_GET["id"])?$_GET["id"]:$_POST["id"];
 
     //Monto a consulta SQL
-    $sql = "select id, nome, foto, 'partidas-disputadas', vitorias, 'gols-marcados', 'ano-de-nascimento' from cartas where id = " . $id ;
+    $sql = "select id, nome, foto, 'partidas-disputadas', vitorias, 'gols-marcados', 'ano-de-nascimento'  from cartas where id = " . $id ;
 
     //Executo o comando SQL
     $resultado = mysqli_query($conexao, $sql);
