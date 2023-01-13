@@ -9,7 +9,7 @@
     if(isset($_POST["nome"]) && isset($_POST["id"])) {
 
     //Monto a consulta SQL
-    $sql = "update cartas set nome = '" . $_POST["nome"] . "' where id = " . $_POST["id"];
+    $sql = "update cartas set nome = '" . $_POST["nome"] . "', foto = '" . $_POST["foto"] . "'  where id = " . $_POST["id"];
 
     //Executo o comando SQL
     $resultado = mysqli_query($conexao, $sql);
@@ -25,7 +25,7 @@
     $id = isset($_GET["id"])?$_GET["id"]:$_POST["id"];
 
     //Monto a consulta SQL
-    $sql = "select id, nome from cartas where id = " . $id ;
+    $sql = "select id, nome, foto, 'partidas-disputadas', vitorias, 'gols-marcados', 'ano-de-nascimento' from cartas where id = " . $id ;
 
     //Executo o comando SQL
     $resultado = mysqli_query($conexao, $sql);
@@ -54,8 +54,16 @@
 
     <form action="editar.php" method="post">
       <input type="hidden" name="id" value="<?=$linha["id"]?>">
-      <input type="text" name="nome" value="<?=$linha["nome"]?>">
+      FOTO:<input type="text" name="foto" value="<?=$linha["foto"]?>"> </br>
+      NOME:<input type="text" name="nome" value="<?=$linha["nome"]?>"> </br>
       
+      partidas: <input type="number" name="partidas-disputadas" value="<?=$linha["partidas-disputadas"]?>"/> </br>
+
+      vitorias: <input type="number" name="vitorias" value="<?=$linha["vitorias"]?>"/> </br>
+
+      Gols Marcados: <input type="number" name="gols-marcados" value="<?=$linha["gols-marcados"]?>"/> </br>
+
+      Ano de Nascimento: <input type="number" name="ano-de-nascimento" value="<?=$linha["'ano-de-nascimento'"]?>"/> </br>
       <input type="submit" value="salvar" />
     </form>
 
