@@ -1,0 +1,28 @@
+html {
+  font-family: sans-serif;
+  margin: 20px;
+}
+.menu {
+  background-color: rgb(221, 164, 90);
+  border: solid black 2px;
+  border-radius: 4px;
+  padding: 5px 10px 5px 10px;
+  color: black;
+  gap: 10px;
+  margin: 5px;
+}
+.table {
+  gap: 10px;
+  display: grid;
+  max-width: 400px;
+  max-height: 400px;
+}
+.form {
+  display: flex;
+  margin: 5px;
+  padding-right: 250px;
+}
+.button {
+  display: grid;
+  justify-items: end;
+}
